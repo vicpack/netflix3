@@ -1,0 +1,5 @@
+cd C:/ 
+ls -la
+cd .ssh
+ls netflix3.pem
+ssh -i "netflix3.pem" pegas el link de amazon
