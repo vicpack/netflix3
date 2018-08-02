@@ -1,0 +1,11 @@
+language: node_js
+node_js: "-'8.5.0'"
+deploy:
+  provider: heroku
+  api_key:
+    secure: G+dm0TPpdGvjqwq/EC6bhQzEVAaXBokd4z9uWkwlQOUdRLmcG6zbPZSMeXAHypmA4U08fki0/KnXZk/svwyhK8794/HRf7SRJL13XFncMIDJli303ZWf8T+KoD3+wmtSsUsO84ngXRbpwVNK6aD3xyVcO980D4LLCqQgdXYSUTY+Chi4X1wYDyoVvZy0AfxtfJXS3eiiUgdYlO22XVb5M6Il7XQHyNmbSwMpe0nvz66PVI3kZfd8WZVR+zYDFB0S2/J40RDX5BnPiw8t4Qi1nFO6AlAkycSbAZ/yl4nXUFn4ow3pvlVHprLDgBgQoM1KWQ5eh8tkW7RbFkdoCQmdFmOcBn1Ar6zeprydk0C8HZxItTQadwK82GlPH7WOt/vdfPI+iVsiRCkD/X1PEK2Rd31Y4jLZHE2r/PoVmR/wFUlqrlvtA6R09NBDl0Q3uZpotzqwLNuNPSOh32KEDSoyHsQADf/zYIbKUgCMBRJxmEfY7sNy/ZglhzJ6tFnK1MNpQqZmgJwSgStC/+d+K7Rvjo9RsmXQJisGlAFCU+5oux6u6sKTdBjW23ZDxg/Sc4aTRY0ChWNZI7ROIW/3A19ujOM/KvA/fWeuDW7DUjlK0Cock3iBZ8BSFi5Zh5rK05Fcc+RQGULe4QpSjllCYP75B5K9Mv8P+6BAYG1RX752kFE=
+  app: netflix3
+  on:
+    repo: vicpack/netflix3
+    branch: master
+  skip_cleanup: true

@@ -24,7 +24,7 @@ var querySingleMovie = {
 	},
 
 	resolve: function resolve(root, params) {
-		var movie = User.findById(params.id).exec(); //si el id de antes esta con mayusuculas el de aqui debe ser lo contrario , no pueden ser iguales
+		var movie = _movies2.default.findById(params.id).exec(); //si el id de antes esta con mayusuculas el de aqui debe ser lo contrario , no pueden ser iguales
 		return movie;
 	}
 };

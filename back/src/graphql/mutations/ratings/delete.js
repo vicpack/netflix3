@@ -17,7 +17,7 @@ export default{
 	},
 
 	resolve(root,params){
-		const deleteRating = Rating.findByIdAndRemove(params.id).exec()
+		const deletedRating = Rating.findByIdAndRemove(params.id).exec()
 		if(!deletedRating) throw new Error("Error al borrar usuario");
 		return deletedRating
 	}

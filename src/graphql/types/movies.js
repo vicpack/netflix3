@@ -43,7 +43,9 @@ export const MovieType = new GraphQLObjectType({
 	    director:{
 			type:GraphQLString
 		},
-
+        images_url:{
+			type:GraphQLString
+		},
 		year:{
 		type:GraphQLString
 		},
@@ -96,7 +98,10 @@ export const MovieInputType = new GraphQLInputObjectType({
 		year:{
 		type:GraphQLString
 		},
-
+		
+		images_url:{
+			type:GraphQLString
+		},
 		
 	    raiting:{
 		type:GraphQLString

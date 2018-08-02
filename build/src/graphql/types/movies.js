@@ -52,7 +52,9 @@ var MovieType = exports.MovieType = new _graphql.GraphQLObjectType({
 			director: {
 				type: _graphql.GraphQLString
 			},
-
+			images_url: {
+				type: _graphql.GraphQLString
+			},
 			year: {
 				type: _graphql.GraphQLString
 			},
@@ -106,6 +108,10 @@ var MovieInputType = exports.MovieInputType = new _graphql.GraphQLInputObjectTyp
 			},
 
 			year: {
+				type: _graphql.GraphQLString
+			},
+
+			images_url: {
 				type: _graphql.GraphQLString
 			},
 

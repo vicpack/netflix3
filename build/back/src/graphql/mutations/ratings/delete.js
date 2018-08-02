@@ -24,7 +24,7 @@ exports.default = {
 	},
 
 	resolve: function resolve(root, params) {
-		var deleteRating = _raitings2.default.findByIdAndRemove(params.id).exec();
+		var deletedRating = _raitings2.default.findByIdAndRemove(params.id).exec();
 		if (!deletedRating) throw new Error("Error al borrar usuario");
 		return deletedRating;
 	}
